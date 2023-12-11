@@ -63,27 +63,14 @@ Cloud computing enables a variety of applications and services to be accessible 
 
 ## What are the 4 TYPES/MODELS of Cloud?
 
-The four main types or models of cloud computing refer to different service and deployment models. These are Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS), and Function as a Service (FaaS), often referred to as serverless computing.
+Public Clouds: A public cloud is a type of cloud computing that provides on-demand access to computing resources (servers, storage, networking, etc.) over the Internet.
 
-Infrastructure as a Service (IaaS):
+Private Clouds: A private cloud is a cloud computing environment that is hosted within a company's own data center. This means that the company has complete control over the hardware, software, and security of the cloud environment.
 
-Description: IaaS provides virtualized computing resources over the internet. It offers virtual machines, storage, and networking, allowing users to manage and control the underlying infrastructure.
-Use Cases: Suitable for businesses that require scalable and flexible infrastructure without the need to invest in or maintain physical hardware. Users have more control over the operating system, applications, and development frameworks.
+Hybrid Clouds: A hybrid cloud is a combination of a public cloud and a private cloud. This means that a company uses both public and private cloud resources to meet its IT needs.
 
-Platform as a Service (PaaS):
+Multi Clouds: A multi-cloud is a deployment strategy in which an organization uses multiple cloud computing platforms from different providers.
 
-Description: PaaS delivers a platform allowing users to develop, run, and manage applications without dealing with the complexities of underlying infrastructure. It includes tools and services for application development, such as databases, middleware, and development frameworks.
-Use Cases: Ideal for developers who want to focus on coding and application development without worrying about managing the underlying infrastructure. Enables faster development and deployment of applications.
-
-Software as a Service (SaaS):
-
-Description: SaaS delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance. The software is typically provided on a subscription basis.
-Use Cases: Commonly used for applications such as email, collaboration tools, customer relationship management (CRM), and other business applications. Users can access software from any device with an internet connection.
-
-Function as a Service (FaaS) / Serverless Computing:
-
-Description: FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand.
-Use Cases: Suitable for event-driven and microservices architectures. Developers can focus on writing code for specific functions without dealing with server provisioning or maintenance.
 
 ## What are the different types of cloud SERVICE?
 
