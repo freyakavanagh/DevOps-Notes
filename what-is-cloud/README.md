@@ -65,11 +65,11 @@ Cloud computing enables a variety of applications and services to be accessible 
 
 Public Clouds: A public cloud is a type of cloud computing that provides on-demand access to computing resources (servers, storage, networking, etc.) over the Internet.
 
-Private Clouds: A private cloud is a cloud computing environment that is hosted within a company's own data center. This means that the company has complete control over the hardware, software, and security of the cloud environment.
+Private Clouds/ On prem : A private cloud is a cloud computing environment that is hosted within a company's own data center. This means that the company has complete control over the hardware, software, and security of the cloud environment.
 
-Hybrid Clouds: A hybrid cloud is a combination of a public cloud and a private cloud. This means that a company uses both public and private cloud resources to meet its IT needs.
+Hybrid Clouds: A hybrid cloud is a combination of a public cloud and a private cloud. This means that a company uses both public and private cloud resources to meet its IT needs. e.g. database on prem and app on the cloud.
 
-Multi Clouds: A multi-cloud is a deployment strategy in which an organization uses multiple cloud computing platforms from different providers.
+Multi Clouds: A multi-cloud is a deployment strategy in which an organization uses multiple cloud computing platforms from different providers. So the apps and databases are replicated across other providers so if one of them breaks it will still run.
 
 
 ## What are the different types of cloud SERVICE?
@@ -112,7 +112,7 @@ Cost Savings: Cloud computing eliminates the need for significant upfront invest
 
 Scalability: Cloud services provide on-demand scalability. Businesses can easily scale up or down based on changing requirements, ensuring optimal resource utilization.
 
-Flexibility and Accessibility: Cloud services can be accessed from anywhere with an internet connection, promoting flexibility in work arrangements and enabling remote collaboration.
+Flexibility and Accessibility: Cloud services can be accessed from anywhere with an internet connection, promoting flexibility in work arrangements and enabling remote collaboration. Global availibility.
 
 Speed and Agility: Cloud computing allows for rapid provisioning of resources and enables faster development and deployment of applications through automation.
 
@@ -166,16 +166,16 @@ CapEx: Tax benefits are realized over the asset's useful life.
 
 Q2 2023
 
-| Cloud Provider | Market Share (%) |
-| -------------- | ---------------- ||
-| Amazon Web Services (AWS)   | 32%              |
-| Microsoft Azure             | 22%              |
-| Google Cloud Platform (GCP) | 10%              |
-| IBM                         | 8%               |
-| Alibaba Cloud               | 6%               |
-| Oracle                      | 5%               |
-| Salesforce                  | 3%               |
-| Others                      | 10%              |
+| Cloud Provider | Market Share (%) | <br> |
+| -------------- | ---------------- ||<br>
+| Amazon Web Services (AWS)   | 32%              |<br>
+| Microsoft Azure             | 22%              |<br>
+| Google Cloud Platform (GCP) | 10%              |<br>
+| IBM                         | 8%               |<br>
+| Alibaba Cloud               | 6%               |<br>
+| Oracle                      | 5%               |<br>
+| Salesforce                  | 3%               |<br>
+| Others                      | 10%              |<br>
 
 ## What are the 3 largest Cloud providers known for (What makes them popular?)
 

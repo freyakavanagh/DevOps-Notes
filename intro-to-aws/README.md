@@ -6,11 +6,7 @@ Amazon Web Services (AWS) is a comprehensive, evolving cloud computing platform 
 
 AWS regions and availability zones are the two fundamental building blocks of the AWS infrastructure. AWS regions are geographically dispersed data centers that are interconnected for high availability and low latency. Each region consists of multiple availability zones, which are isolated data centers within a region.
 
-How AWS Regions Work
-
 AWS regions provide a physical separation of data and applications, ensuring that your applications can remain available even if there is an outage in one availability zone. Regions are strategically located around the world to provide low latency and high availability for applications that are used by users in multiple regions.
-
-How AWS Availability Zones Work
 
 Within each AWS region, there are one or more availability zones. Availability zones are physically separated from each other, ensuring that if there is a failure in one availability zone, the other availability zones will remain unaffected. This redundancy helps to protect your applications from downtime and data loss.
 
