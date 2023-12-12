@@ -19,7 +19,8 @@
 
 ## Day 2
 [Linux](Linux/README.md)<br>
-[EC2](ec2-instance/README.md)
+[EC2](ec2-instance/README.md)<br>
+[Managing file ownership](managing-file-ownership/README.md)
 
 
 
