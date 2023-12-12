@@ -74,24 +74,19 @@ Multi Clouds: A multi-cloud is a deployment strategy in which an organization us
 
 ## What are the different types of cloud SERVICE?
 
-Cloud services are typically categorized into three main types based on the level of abstraction and functionality they offer. These are Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+Cloud services are typically categorized into three main types based on the level of abstraction and functionality they offer.
 
-Infrastructure as a Service (IaaS):
-
-Description: IaaS provides virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking components on a pay-as-you-go basis. This model gives users more control over the infrastructure, including the operating system, applications, and development frameworks.
+Infrastructure as a Service (IaaS): IaaS provides virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking components on a pay-as-you-go basis. This model gives users more control over the infrastructure, including the operating system, applications, and development frameworks.
 Examples: Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.
-Platform as a Service (PaaS):
 
-Description: PaaS offers a platform that enables users to develop, run, and manage applications without dealing with the complexity of underlying infrastructure. It includes tools and services for application development, such as databases, middleware, and development frameworks. PaaS abstracts the infrastructure details, allowing developers to focus on coding.
+Platform as a Service (PaaS): PaaS offers a platform that enables users to develop, run, and manage applications without dealing with the complexity of underlying infrastructure. It includes tools and services for application development, such as databases, middleware, and development frameworks. PaaS abstracts the infrastructure details, allowing developers to focus on coding.
 Examples: Heroku, Google App Engine, Microsoft Azure App Service.
-Software as a Service (SaaS):
 
-Description: SaaS delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance. The software is typically provided on a subscription basis, and users can access it through a web browser.
+Software as a Service (SaaS): SaaS delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance. The software is typically provided on a subscription basis, and users can access it through a web browser.
 Examples: Salesforce, Google Workspace (formerly G Suite), Microsoft 365, Dropbox.
 Additionally, there is another model known as Function as a Service (FaaS) or serverless computing, which is often considered a subcategory of PaaS:
 
-Function as a Service (FaaS) / Serverless Computing:
-Description: FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand, and users are billed based on the actual execution of functions.
+Function as a Service (FaaS) / Serverless Computing: FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand, and users are billed based on the actual execution of functions.
 Examples: AWS Lambda, Azure Functions, Google Cloud Functions.
 These cloud service models provide different levels of abstraction and management, allowing users to choose the most appropriate level based on their specific needs, skills, and requirements.
 
