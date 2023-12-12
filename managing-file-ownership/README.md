@@ -25,3 +25,18 @@ For example, if the user "john" creates a file, the owner will be "john," and th
 When a user creates a new file, the default permissions are often set to allow read and write access for the owner (rw-). The assumption is that execute permissions are typically needed for programs or scripts, not for regular data files. Therefore, not granting execute permissions by default helps to limit the possibility of accidentally executing a data file as if it were a program.
 
 ## What command is used to change the owner of a file or directory?
+
+```chown [new_owner][:new_group] file_or_directory```
+
+new_owner: The username of the new owner. <br>
+new_group: (Optional) The group name or GID (Group ID) of the new group. If not specified, the file or directory retains its current group ownership.
+
+e.g.
+
+```chown newowner myfile.txt```
+
+e.g.
+
+```chown newowner:newgroup mydirectory```
+
+May need to add sudo to the front if your don't have the privaleges
