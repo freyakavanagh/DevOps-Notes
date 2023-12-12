@@ -76,19 +76,31 @@ Multi Clouds: A multi-cloud is a deployment strategy in which an organization us
 
 Cloud services are typically categorized into three main types based on the level of abstraction and functionality they offer.
 
-Infrastructure as a Service (IaaS): IaaS provides virtualized computing resources over the internet. Users can rent virtual machines, storage, and networking components on a pay-as-you-go basis. This model gives users more control over the infrastructure, including the operating system, applications, and development frameworks.
-Examples: Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.
+On prem: (no cloud service) 
+- can control everything e.g. wires, hubs, routers, hardrives, and everything that runs on them.
+- But also means more responsibility
 
-Platform as a Service (PaaS): PaaS offers a platform that enables users to develop, run, and manage applications without dealing with the complexity of underlying infrastructure. It includes tools and services for application development, such as databases, middleware, and development frameworks. PaaS abstracts the infrastructure details, allowing developers to focus on coding.
-Examples: Heroku, Google App Engine, Microsoft Azure App Service.
+Infrastructure as a Service (IaaS): 
+- Provides virtualized computing resources over the internet. Users can rent virtual machines, storage, servers, and networking components on a pay-as-you-go basis. 
+- This model gives users more control over the infrastructure, including the operating system, applications, and development frameworks.
+- Examples: Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.
 
-Software as a Service (SaaS): SaaS delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance. The software is typically provided on a subscription basis, and users can access it through a web browser.
-Examples: Salesforce, Google Workspace (formerly G Suite), Microsoft 365, Dropbox.
+Platform as a Service (PaaS): 
+- PaaS offers a platform that enables users to develop, run, and manage applications without dealing with the complexity of underlying infrastructure. It includes tools and services for application development, such as databases, middleware, and development frameworks. 
+- PaaS abstracts the infrastructure details, allowing developers to focus on coding and data.
+- Examples: Heroku, Google App Engine, Microsoft Azure App Service.
+
+Software as a Service (SaaS): 
+- SaaS delivers software applications over the internet, allowing users to access and use the software without the need for installation or maintenance. The software is typically provided on a subscription basis, and users can access it through a web browser.
+- Only responsible for the data (e.g. your details when playing an online video game)
+- Examples: Salesforce, Google Workspace (formerly G Suite), Microsoft 365, Dropbox.
+
 Additionally, there is another model known as Function as a Service (FaaS) or serverless computing, which is often considered a subcategory of PaaS:
 
-Function as a Service (FaaS) / Serverless Computing: FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand, and users are billed based on the actual execution of functions.
-Examples: AWS Lambda, Azure Functions, Google Cloud Functions.
-These cloud service models provide different levels of abstraction and management, allowing users to choose the most appropriate level based on their specific needs, skills, and requirements.
+Function as a Service (FaaS) / Serverless Computing: 
+- FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand, and users are billed based on the actual execution of functions.
+- Examples: AWS Lambda, Azure Functions, Google Cloud Functions.
+
 
 ## Advantages/Disadvantages of the Cloud? Specifically for a business.
 
@@ -230,4 +242,4 @@ Data transfer: This is the cost of transferring data in and out of the cloud. Th
 
 Premium services: These are additional services that are not included in the base price of your cloud service. For example, you may need to pay extra for backup services, security services, or disaster recovery services.
 
-Customization: If you need to customize your cloud service, you may need to pay extra for consulting or development services.
+Customization: If you need to customize your cloud service, you may need to pay extra for consulting or development services. 
