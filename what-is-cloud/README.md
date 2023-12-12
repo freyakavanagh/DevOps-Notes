@@ -74,7 +74,9 @@ Multi Clouds: A multi-cloud is a deployment strategy in which an organization us
 
 ## What are the different types of cloud SERVICE?
 
-Cloud services are typically categorized into three main types based on the level of abstraction and functionality they offer.
+Cloud services are typically categorized into three main types based on the level of abstraction and functionality they offer. 
+
+Control vs. responsibility
 
 On prem: (no cloud service) 
 - can control everything e.g. wires, hubs, routers, hardrives, and everything that runs on them.
