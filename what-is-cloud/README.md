@@ -4,6 +4,10 @@
 
 Cloud computing involves delivering various on demand and highly scalable computing services, such as storage, processing power, networking, databases, and more, over the internet. Instead of owning and maintaining physical hardware and infrastructure, users can access and use these services on a pay-as-you-go basis, scaling resources up or down as needed.
 
+Scaling: Vertical or horizontal scaling.<br>
+Vertical(Scaling up/down): more or less memory and cpu. Gets transferred to a different, adjusted cpu and the old one is terminated.<br>
+Horizontal(Scaling in/out): many serverless services use this. Meets demand by adding more virtial machines or removing them.<br>
+
 ## Quick history/timeline of Cloud Computing.
 
 1960s - 1980s:
@@ -102,6 +106,8 @@ Additionally, there is another model known as Function as a Service (FaaS) or se
 Function as a Service (FaaS) / Serverless Computing: 
 - FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand, and users are billed based on the actual execution of functions.
 - No control over which servers are spun up and to what degree
+- Can cost a lot more as they will run and spin up whatever resources it needs to meet demand.
+- Will be consistently fast.
 - Examples: AWS Lambda, Azure Functions, Google Cloud Functions.
 
 

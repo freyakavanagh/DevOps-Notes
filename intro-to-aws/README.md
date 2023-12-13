@@ -10,7 +10,7 @@ AWS regions provide a physical separation of data and applications, ensuring tha
 
 Within each AWS region, there are one or more availability zones. Availability zones are physically separated from each other, ensuring that if there is a failure in one availability zone, the other availability zones will remain unaffected. This redundancy helps to protect your applications from downtime and data loss.
 
-what to consider:
+what to consider when choosing a region:
 
 - how close to region (less delay).
 - but mostly where end users are located.

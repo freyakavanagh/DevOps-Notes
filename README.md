@@ -6,6 +6,7 @@
   - [Code snipits](#code-snipits)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Showing an Image](#showing-an-image)
+- [Why .SSH Folder](#why-ssh-folder)
 
 
 ## Day 1
@@ -51,6 +52,12 @@ cd <directory>
 # Showing an Image
 
 ![screenshot.png](ReadMeImages/screenshot.png)
+
+# Why .SSH Folder
+
+- '.' means it is a hidden folder
+- and everything can be put in one location.
+- (credentials and keys)
 
 
 
