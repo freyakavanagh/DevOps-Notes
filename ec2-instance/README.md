@@ -4,7 +4,7 @@ EC2 instance is a virtual machine on AWS.
 
 Made up of...
 
-![screenshot.jpg](ReadMeImages/EC2.jpg)
+![EC2.jpg](ReadMeImages/EC2.jpg)
 
 Region: Where everything lives<br>
 VPC Virtual Private Cloud(determines Region): like an appartment<br>
