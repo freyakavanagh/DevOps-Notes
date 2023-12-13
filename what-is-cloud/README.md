@@ -2,7 +2,7 @@
 
 ## What is Cloud Computing?
 
-Cloud computing involves delivering various computing services, such as storage, processing power, networking, databases, and more, over the internet. Instead of owning and maintaining physical hardware and infrastructure, users can access and use these services on a pay-as-you-go basis, scaling resources up or down as needed.
+Cloud computing involves delivering various on demand and highly scalable computing services, such as storage, processing power, networking, databases, and more, over the internet. Instead of owning and maintaining physical hardware and infrastructure, users can access and use these services on a pay-as-you-go basis, scaling resources up or down as needed.
 
 ## Quick history/timeline of Cloud Computing.
 
@@ -101,6 +101,7 @@ Additionally, there is another model known as Function as a Service (FaaS) or se
 
 Function as a Service (FaaS) / Serverless Computing: 
 - FaaS allows developers to run individual functions or units of code in response to events without managing the entire infrastructure. It automatically scales based on demand, and users are billed based on the actual execution of functions.
+- No control over which servers are spun up and to what degree
 - Examples: AWS Lambda, Azure Functions, Google Cloud Functions.
 
 
@@ -135,7 +136,7 @@ Potential Downtime: Despite high reliability, cloud services can experience down
 
 Transition Challenges: Transitioning existing systems and data to the cloud can be complex and may require changes to existing workflows. This process may disrupt operations temporarily.
 
-Cost Management: While the pay-as-you-go model is generally cost-effective, poor management of resources can lead to unexpected costs. It requires vigilant monitoring and optimization.
+Cost Management: While the pay-as-you-go model is generally cost-effective, poor management of resources can lead to unexpected costs. It requires vigilant monitoring and optimization. Not always cheaper, have to look at overall cost over a number of years. Also will they have to bring in new people with cloud expertise or train them?
 
 Limited Control: Businesses have less control over the underlying infrastructure in a cloud environment. This lack of control may be a concern for organizations with specific regulatory or compliance requirements.
 
@@ -245,3 +246,4 @@ Data transfer: This is the cost of transferring data in and out of the cloud. Th
 Premium services: These are additional services that are not included in the base price of your cloud service. For example, you may need to pay extra for backup services, security services, or disaster recovery services.
 
 Customization: If you need to customize your cloud service, you may need to pay extra for consulting or development services. 
+

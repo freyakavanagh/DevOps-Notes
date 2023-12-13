@@ -10,6 +10,12 @@ AWS regions provide a physical separation of data and applications, ensuring tha
 
 Within each AWS region, there are one or more availability zones. Availability zones are physically separated from each other, ensuring that if there is a failure in one availability zone, the other availability zones will remain unaffected. This redundancy helps to protect your applications from downtime and data loss.
 
+what to consider:
+
+- how close to region (less delay).
+- but mostly where end users are located.
+- maybe cost.
+
 ## How AWS Points of Presence Work
 
 AWS points of presence (PoPs) are distributed around the world and are used to distribute content and improve network performance for AWS services. PoPs are located near internet service providers (ISPs) and end users to reduce latency and improve the overall performance of AWS services.
