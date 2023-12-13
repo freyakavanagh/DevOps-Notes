@@ -2,7 +2,11 @@
 
 bash = Bourne again shell.<br>
 Shell: An interface that runs commands.<br>
-There ae many shells that someone can use.<br>
+There are many shells that someone can use.<br>
+
+<u>bash vs. git bash</u>
+- bash: a type of command line interface on top of linux itself and doesn't neccesarily include git commands, might have to install git command set
+- git bash: something that runs on the windows/mac machine that emulates a linux interpreter, allows you to run most bash commands but still runs on top of mac/windows so some linux commands may not work. Will be able to use git commands.
 
 d and colour coded = directory
 
