@@ -3,18 +3,17 @@
 - [Week 1 - AWS and Linux](#week-1---aws-and-linux)
   - [Day 1](#day-1)
   - [Day 2](#day-2)
-  - [Code snipits](#code-snipits)
+  - [Day 3](#day-3)
+  - [Day 4](#day-4)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
-- [Showing an Image](#showing-an-image)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
-- [App](#app)
 
 
 ## Day 1
 [What is cloud?](what-is-cloud/README.md)
 <br>
-[AWS Basics](aws-basics/README.md)
+[AWS Basics](intro-to-aws/README.md)
 <br>
 
 
@@ -24,18 +23,13 @@
 [Linux](Linux/README.md)<br>
 [EC2](ec2-instance/README.md)<br>
 [Managing file ownership](managing-file-ownership/README.md)
+[Managing file permissions](managing-file-permissions/README.md)
 
+## Day 3
+[Managing file permissions](managing-file-permissions/README.md)
 
-
-
-## Code snipits
-
-Change directory using this command: `cd <directory>`
-
-
-```
-cd <directory>
- ```
+## Day 4
+[App Deployment](app-deployment/README.md)
 
 # Credentials for a good interview
 
@@ -51,14 +45,10 @@ cd <directory>
 - Know your audience - laymans terms
 
 
-# Showing an Image
-
-![screenshot.png](ReadMeImages/screenshot.png)
-
 # Why .SSH Folder
 
 - '.' means it is a hidden folder
-- and everything can be put in one location.
+- Everything can be put in one location.
 - (credentials and keys)
 
 # Removing a .git file
@@ -70,12 +60,6 @@ then...
 ```git status```
 
 to check it is not a repository
-
-# App
-
-3.254.68.4/
-web/home
-api/movies
 
 
 
