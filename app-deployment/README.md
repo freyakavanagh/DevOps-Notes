@@ -1,35 +1,31 @@
 # Deployment of a java App
 
-<u>Plan</u> 
+1. Plan
+2. Test manualy
+3. Note any issues<br>
+e.g. user interaction
 
-Update
+Update: ```sudo apt update```
 
-Upgrade
+Upgrade: ```sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y```
 
-Install dependencies:<br>
-JDK 17<br>
-maven
+Install dependencies:
 
-copy code to vm
-
-<u>test manually</u>
-
-Note any issues<br>
-e.g. questions asked despite -y<br>
-
-```sudo apt update```
-
-```sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y```
-
-
-```sudo DEBIAN_FRONTEND=noninteractive apt install maven -y```
-
-
+maven: ```sudo DEBIAN_FRONTEND=noninteractive apt install maven -y```<br>
 ```mvn -version``` (checks maven is installed)
 
-```sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y```
-
+JDK 17:```sudo DEBIAN_FRONTEND=noninteractive apt install openjdk-17-jdk -y```<br>
 ```java -version``` (checks java is installed)
+
+copy code to vm: ```git clone https://github.com/freyakavanagh/tech242-jsonvoorhees-app.git```
+
+cd into the folder and run: 
+
+```cd ~/jsonvoorhees-java-atlas-app/springapi```
+
+```mvn spring-boot:stop```
+
+```mvn spring-boot:start```
 
 # Stop user interaction
 
@@ -67,6 +63,6 @@ http://34.251.118.193:5000/
 
 http://34.251.118.193:5000/web/home
 
+# Script Example
 
-
-Documents issue!
+![Script](../ReadMeImages/scriptimage.png)
