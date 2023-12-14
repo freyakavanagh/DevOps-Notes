@@ -88,7 +88,7 @@ exit: exit root user<br>
 #: a comment, so will be ignored<br>
 update: find all the latest packages<br>
 upgrade: install all the latest packages into the OS (could break something)<br>
-install:<br>
+install: dependenies to install<br>
 restart: If you change its configuratio  and want to load them up and apply them<br>
 Enable: If it is enabled it will run on startup.<br>   
 

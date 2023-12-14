@@ -7,6 +7,8 @@
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Showing an Image](#showing-an-image)
 - [Why .SSH Folder](#why-ssh-folder)
+- [Removing a .git file](#removing-a-git-file)
+- [App](#app)
 
 
 ## Day 1
@@ -59,8 +61,21 @@ cd <directory>
 - and everything can be put in one location.
 - (credentials and keys)
 
+# Removing a .git file
 
+```rm -rf .git```
 
+then...  
+
+```git status```
+
+to check it is not a repository
+
+# App
+
+3.254.68.4/
+web/home
+api/movies
 
 
 
