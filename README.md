@@ -5,6 +5,7 @@
   - [Day 2](#day-2)
   - [Day 3](#day-3)
   - [Day 4](#day-4)
+  - [Day 5](#day-5)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
@@ -30,6 +31,8 @@
 
 ## Day 4
 [App Deployment](app-deployment/README.md)
+
+## Day 5
 
 # Credentials for a good interview
 
@@ -59,11 +62,4 @@ then...
 
 ```git status```
 
-to check it is not a repository
-
-
-
-
-
-
-
+to check it is still not a repository

@@ -1,6 +1,10 @@
 #!/bin/bash
 # update & upgrade
 echo "update..."
+sudo apt update
+echo "done"
+echo ""
+echo "upgrade..."
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
 echo "done"
 echo ""
@@ -26,12 +30,12 @@ echo "done"
 echo ""
 # copy the app code to this vm
 echo "copying..."
-git clone https://github.com/freyakavanagh/tech242-jsonvoorhees-app.git
+sudo git clone https://github.com/freyakavanagh/tech242-jsonvoorhees-app.git repo
 echo "done"
 echo ""
 # cd into the right folder & run the app
 echo "navigating"
-cd ~/jsonvoorhees-java-atlas-app/springapi
+cd /repo
 echo "done"
 echo ""
 echo "stopping..."
