@@ -34,7 +34,8 @@
 
 ## Day 5
 [Levels of Automation and User Data](levels-of-automation/README.md)<br>
-[AMI Creation](ami-creation/README.md)
+[AMI Creation](ami-creation/README.md)<br>
+[Apache Reverse Proxy](apache-reverse-proxy/README.md)
 
 # Credentials for a good interview
 

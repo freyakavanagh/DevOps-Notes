@@ -15,4 +15,4 @@
    -  #!/bin/bash
    -  cd repo
    -  sudo mvn spring-boot:start
-7. Connect to IP through web
+7. Connect to through the web
