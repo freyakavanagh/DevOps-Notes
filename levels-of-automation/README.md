@@ -3,6 +3,7 @@
 1. Test commands manualy (ssh in)
 2. Script (ssh in)
 3. User data (a place in the advanced settings of an EC2 instance)
+4. AMI
 
 
 ## User data
@@ -35,3 +36,9 @@
 ## User Data Script
 
 ![User Data Script](../ReadMeImages/user-data-script.png)
+
+
+
+
+
+

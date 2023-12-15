@@ -23,7 +23,7 @@
 ## Day 2
 [Linux](Linux/README.md)<br>
 [EC2](ec2-instance/README.md)<br>
-[Managing file ownership](managing-file-ownership/README.md)
+[Managing file ownership](managing-file-ownership/README.md)<br>
 [Managing file permissions](managing-file-permissions/README.md)
 
 ## Day 3
@@ -33,7 +33,8 @@
 [App Deployment](app-deployment/README.md)
 
 ## Day 5
-[Levels of Automation and User Data](levels-of-automation/README.md)
+[Levels of Automation and User Data](levels-of-automation/README.md)<br>
+[AMI Creation](ami-creation/README.md)
 
 # Credentials for a good interview
 
