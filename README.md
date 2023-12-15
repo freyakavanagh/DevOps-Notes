@@ -33,6 +33,7 @@
 [App Deployment](app-deployment/README.md)
 
 ## Day 5
+[Levels of Automation and User Data](levels-of-automation/README.md)
 
 # Credentials for a good interview
 
