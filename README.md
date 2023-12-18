@@ -9,6 +9,7 @@
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
+  - [Port](#port)
 
 
 ## Day 1
@@ -66,3 +67,9 @@ then...
 ```git status```
 
 to check it is still not a repository
+
+## Port
+
+Like a destination on a device that has a service running behind it, you are trying to connect to the service, the port specifies the specific service
+The IP is just the device, doesn't specifiy the service.
+

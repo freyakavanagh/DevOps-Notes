@@ -16,3 +16,10 @@
    -  cd repo
    -  sudo mvn spring-boot:start
 7. Connect to through the web
+
+# How to remove a AMI
+
+Remove both the AMI and the snapshots
+
+AMI: Actions>Degregister
+Snapshots: Actions>Delete
