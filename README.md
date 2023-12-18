@@ -6,6 +6,9 @@
   - [Day 3](#day-3)
   - [Day 4](#day-4)
   - [Day 5](#day-5)
+- [Week 2](#week-2)
+  - [Day 1](#day-1-1)
+  - [Day 2](#day-2-1)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
@@ -35,8 +38,17 @@
 
 ## Day 5
 [Levels of Automation and User Data](levels-of-automation/README.md)<br>
+[Script](script/README.md)<br>
 [AMI Creation](ami-creation/README.md)<br>
-[Apache Reverse Proxy](apache-reverse-proxy/README.md)
+[Apache Reverse Proxy](apache-reverse-proxy/README.md)<br>
+[Apache Script](apache-script/README.md)
+
+# Week 2
+
+## Day 1
+[Second Reverse Proxy Method](other-reverse-proxy-script/README.md)<br>
+
+## Day 2
 
 # Credentials for a good interview
 
