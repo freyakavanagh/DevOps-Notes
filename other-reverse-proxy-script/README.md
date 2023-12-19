@@ -23,9 +23,18 @@ If the proxypass statement is not in the 000-default.conf file...<br>
 
 ## Testing method
 
+- start with an instance with a working scipt without reverse proxy
 - install, start and enable apache, add the two modules, restart apache
 - cd /etc/apache2/sites-available/ (cd into folder with 000-default.conf file)
 - cp 000-default.conf 000-default.conf.bk (copy file to create a backup)
 - Test the file editing line (sed) manually
   - Every forwardslash in a string must have a backslash in front of it
 - Test the if statement with a file with the ProxyPass statement and a file without it manually
+
+- Test the script in a fresh instance
+
+- Test the script in user data
+
+- Create the ami from the working instance
+
+- Create the instance from the ami.

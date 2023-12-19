@@ -47,6 +47,8 @@
 
 ## Day 1
 [Second Reverse Proxy Method](other-reverse-proxy-script/README.md)<br>
+[Apache Other Script](apache-script-2/README.md)
+
 
 ## Day 2
 
