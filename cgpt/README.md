@@ -90,3 +90,13 @@ if mysql -u"$DB_USER" -h"$DB_IP" -p"$MYSQL_PWD" -e "use $DB_NAME"; then
 else
     echo "Failed to connect to the database. Application start aborted."
 fi
+
+
+
+
+
+
+
+
+
+

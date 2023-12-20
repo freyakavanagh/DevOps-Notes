@@ -26,43 +26,14 @@ root user with password root
 bind ip address - sed command
 replace the configuration file
 
-# Chat GPT commands
+check to connect to database: mysql -h <DB_VM_IP> -u root -p
 
-#!/bin/bash
+check mysql is running: sudo systemctl status mysql
+SHOW TABLES;
 
-# Update the package list and install MySQL server
-sudo apt-get update
-sudo apt-get install -y mysql-server
+check the environment variables:
 
-# Check if MySQL service is running and enable it if necessary
-sudo systemctl is-active --quiet mysql || sudo systemctl start mysql
-sudo systemctl is-enabled --quiet mysql || sudo systemctl enable mysql
-
-# Download the SQL script from the repository
-sudo git clone https://github.com/freyakavanagh/world-project-api-to-deploy.git repo
-
-# Run the SQL script to create the database and tables
-sudo mysql < repo/world.sql
-
-# Manual check: Ensure the database and tables are created correctly
-# (This might involve logging into the MySQL shell and running some queries)
-sudo mysql -u root -p
-root
-exit;
-
-# Configure MySQL to accept connections from outside with root user and password root
-sudo sed -i 's/bind-address/#bind-address/' /etc/mysql/mysql.conf.d/mysqld.cnf
-sudo mysql -u root -p
-root
-CREATE USER 'root'@'%' IDENTIFIED BY 'root';
-GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';
-GRANT GRANT OPTION ON *.* TO 'root'@'%';
-FLUSH PRIVILEGES;
-exit;
-
-# Restart MySQL service for changes to take effect
-sudo systemctl restart mysql
+echo $DB_HOST
 
 
-
-
+ mysql -h 172.31.37.98 -u root -p

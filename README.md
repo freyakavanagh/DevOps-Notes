@@ -9,6 +9,7 @@
 - [Week 2](#week-2)
   - [Day 1](#day-1-1)
   - [Day 2](#day-2-1)
+  - [Day 3](#day-3-1)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
@@ -51,6 +52,12 @@
 
 
 ## Day 2
+
+## Day 3
+[Two Tier Deployment](two-tier-deployment/README.md)<br>
+[Database Script](db-vm-script/README.md)<br>
+[App Script](app-vm-script/README.md)
+
 
 # Credentials for a good interview
 
