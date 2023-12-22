@@ -1,5 +1,8 @@
 # Linux
 
+Why Linux: 
+
+
 bash = Bourne again shell.<br>
 Shell: An interface that runs commands.<br>
 There are many shells that someone can use.<br>

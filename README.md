@@ -10,6 +10,8 @@
   - [Day 1](#day-1-1)
   - [Day 2](#day-2-1)
   - [Day 3](#day-3-1)
+  - [Day 4](#day-4-1)
+  - [Day 5](#day-5-1)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
@@ -58,6 +60,10 @@
 [Database Script](db-vm-script/README.md)<br>
 [App Script](app-vm-script/README.md)
 
+## Day 4
+
+## Day 5
+[VPC's](aws-vpc's/README.md)
 
 # Credentials for a good interview
 

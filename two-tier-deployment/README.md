@@ -3,37 +3,48 @@
 1. logic tier - api VM
 2. data tier - MySQL database VM
 
-The two VM's must be sble to connect and comminicate
-    - extra port with security group to allow MySQL traffic
-    - database endpoint, username and password to get into database - both root
-      - needed to be known by api vm to connect to the database vm
-      - in the end they should be environmemt variables but can be hardcoded at first
-      - application.properties - backup(hardcoded)
-        - spring.datasource.url=jdbc:mysql://privateip:3306/world (MYSQL database port number = 3306)
-        - spring.datasource.username=root
-        - spring.datasource.password=root
+## Method
+
+App: Always change to the db vm's private IP<br>
+WEB: Use the public IP of the App vm
+
+1. Set up database vm maually 
+   - ports 3306(MYSQL) and 22(SSH)
+   - Install and enable MYSQL
+   - Clone the repository
+   - Run the MYSQL script
+   - Configure MySQL to accept connections from outside with root user
+   - Set up root user for remote connections
+   - Restart MySQL
+   - check mysql is running: sudo systemctl status mysql
+2. Set up app vm manually
+   - Ports 5000(APP), 22(SSH), and 80(HTTP)
+   - t2.small
+   - update and upgrade
+   - install MYSQL
+   - check that you can connect to the database: mysql -h DB_VM_IP -u root -p, SHOW TABLES;
+   - install maven and JDK
+   - clone the repository
+   - install, start, enable and configure(local host) apache
+   - restart apache
+   - Change environment variables (manually or hardcode in application.properties)
+     - May need to change round the two application.properties(.bk) files
+   - connect to the database.
+3. Set up database using a script
+   - Make idempotent(if statements) 
+   - Check on a fresh vm
+4. Set up app using a script
+   - Make idempotent(if statements) 
+   - Add conditional
+   - Check on a fresh vm
+5. Set up database using user data
+6. Set up app using user data
+7. Set up database using an instannce from an AMI
+   - nothing needed in user data 
+8. Set up app using an instance from an AMI
+   - Once using reverse proxy you no longer need Port 5000 
+   - Add the environment variables and the if statement into user data
 
 
-environment variables
-- ${DB_HOST}
-- ${DB_USER}
-- ${DB_PASS}
 
-world.sql to be run on sql database from the repo
-
-root user with password root
-
-bind ip address - sed command
-replace the configuration file
-
-check to connect to database: mysql -h <DB_VM_IP> -u root -p
-
-check mysql is running: sudo systemctl status mysql
-SHOW TABLES;
-
-check the environment variables:
-
-echo $DB_HOST
-
-
- mysql -h 172.31.37.98 -u root -p
+Blocker: Messing around too much, needed to just restart the instance to get the app running.

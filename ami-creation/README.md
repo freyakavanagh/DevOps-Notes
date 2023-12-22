@@ -23,3 +23,11 @@ Remove both the AMI and the snapshots
 
 AMI: Actions>Degregister
 Snapshots: Actions>Delete
+
+
+
+
+Ports
+
+Database: 3306, dont need 8080, 80(HTTP), 5000
+Application: 5000

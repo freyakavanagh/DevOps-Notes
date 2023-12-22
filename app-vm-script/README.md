@@ -90,3 +90,32 @@ if mysql -u"$DB_USER" -h"$DB_IP" -p"$MYSQL_PWD" -e "use $DB_NAME"; then
 else
     echo "Failed to connect to the database. Application start aborted."
 fi
+
+
+
+
+
+
+
+Don't need the mvn package command in an instance created from the AMI...
+
+# Environment variables
+echo "environment variables..."
+export DB_HOST=jdbc:mysql://172.31.35.34:3306/world
+export DB_IP=172.31.35.34
+export DB_NAME=world
+export DB_USER=root
+export MYSQL_PWD=root
+export DB_PASS=root
+echo "done"
+echo ""
+# Check if connection to the database can be established
+if mysql -u"$DB_USER" -h"$DB_IP" -p"$MYSQL_PWD" -e "use $DB_NAME"; then
+    echo "Connected to the database. Starting the application..."
+    cd /repo/WorldProject
+    #sudo -E mvn package 
+    sudo -E mvn spring-boot:start
+else
+    echo "Failed to connect to the database. Application start aborted."
+fi
+
