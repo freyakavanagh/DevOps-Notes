@@ -4,7 +4,7 @@ A virtual Private Cloud/ Azure Virtual Network.
 
 ![VPC](../ReadMeImages/aws-public-cloud.png)
 
-- A default VPC is created in every region (e.g. fornSparta in Ireland).
+- A default VPC is created in every region (e.g. for Sparta in Ireland).
 - Within the VPC there are three public subnets each one with a different availibility zone (1a,1b, or 1c)
 - VM's can be put in any of the subnets.
   - Having different subnets is useful, as if one goes down there are others you can use.
@@ -13,7 +13,7 @@ A virtual Private Cloud/ Azure Virtual Network.
 ## Custom VPC
 
 - You can create your own VPC and decide which subnets are public and which are private and the availibility zones associated with them.
-    - app vm in publilc
+    - app vm in public
     - database vm in private
 
 ![Custom VPC](../ReadMeImages/custom-vpc.png)
@@ -78,3 +78,5 @@ Custom Router: To allow for connections outside the VPC i.e. the internet (unsaf
 
 
 
+What is a VPC?
+Screenshots!
