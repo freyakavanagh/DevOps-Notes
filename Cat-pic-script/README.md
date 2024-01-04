@@ -2,31 +2,70 @@
 
 # installing awscli
 echo "installing awscli"
-sudo apt install awscli -y
+if ! command -v aws &> /dev/null; then
+    sudo apt install awscli -y
+    echo "AWS CLI installed"
+fi
 echo "done"
 echo ""
 
-# creating variables
+# Creating variables
 echo "creating variables"
-sudo AWS_ACCESS_KEY_ID="your_access_key_id"
-sudo AWS_SECRET_ACCESS_KEY="your_secret_access_key"
-sudo AWS_DEFAULT_REGION="eu-west-1"
-sudo AWS_OUTPUT_FORMAT="json"
+AWS_ACCESS_KEY_ID="your_access_key_id"
+AWS_SECRET_ACCESS_KEY="your_secret_access_key"
+AWS_DEFAULT_REGION="eu-west-1"
 echo "done"
 echo ""
 
-# configuring aws
-echo "configuring aws"
-sudo aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
-sudo aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
-sudo aws configure set default.region $AWS_DEFAULT_REGION
-sudo aws configure set default.output $AWS_OUTPUT_FORMAT
+# logging in
+echo "logging in"
+aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+aws configure set aws_secret_access_key "$AWS_SECRET_ACCESS_KEY"
+aws configure set default.region "$AWS_DEFAULT_REGION"
 echo "done"
 echo ""
 
 # creating a bucket
 echo "creating a bucket"
-sudo aws s3 mb s3://tech242-freya-cat-bucket
+bucket_name="tech242-freya-bucket"
+aws s3 mb s3://"$bucket_name"
+echo "done"
+echo ""
+
+# Check for any Block Public Access settings that might override the policy
+echo "check public access settings"
+aws s3api get-public-access-block --bucket "$bucket_name"
+echo "Displays public access settings"
+echo ""
+ 
+# If Block Public Access settings are enabled, disable them:
+echo "disable public access settings if they are enabled"
+aws s3api delete-public-access-block --bucket "$bucket_name"
+echo "done"
+echo ""
+ 
+# Define a bucket policy to allow public read access
+echo "define a bucket policy"
+policy_json=$(cat <<EOF
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::$bucket_name/*"
+    }
+  ]
+}
+EOF
+)
+echo "done"
+echo ""
+ 
+# Apply the bucket policy
+echo "applying the policy"
+aws s3api put-bucket-policy --bucket "$bucket_name" --policy "$policy_json"
 echo "done"
 echo ""
 
@@ -38,19 +77,13 @@ echo ""
 
 # Uploading image to S3 bucket
 echo "uploading to bucket"
-sudo aws s3 cp scary-cat.jpg s3://tech242-freya-cat-bucket/scary-cat.jpg
+aws s3 cp scary-cat.jpg s3://"$bucket_name"/
 echo "done"
-echo ""
-
-# Changing permissions
-echo "changing permissions"
-sudo aws s3api put-object-acl --bucket tech242-freya-cat-bucket --key scary-cat.jpg --acl public-read
-echo "done
 echo ""
 
 # Modifying homepage
 echo "modifying homepage"
-sudo sed -i 's|<img src="/images/friday13th.jpg" alt="friday13thposter">|<img src="https://www.telegraph.co.uk/multimedia/archive/03269/Angry_Cat_3_3269981k.jpg?imwidth=680" alt="scary-cat">|' /repo/src/main/resources/templates/home.html
+sudo sed -i 's|<img src="/images/friday13th.jpg" alt="friday13thposter">|<img src="https://tech242-freya-bucket.s3.eu-west-1.amazonaws.com/scary-cat.jpg" alt="scary-cat">|' /repo/src/main/resources/templates/home.html
 echo "done"
 echo ""
 
@@ -60,3 +93,6 @@ cd /repo
 sudo mvn package
 echo "done"
 echo ""
+
+
+
