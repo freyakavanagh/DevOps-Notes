@@ -12,6 +12,10 @@
   - [Day 3](#day-3-1)
   - [Day 4](#day-4-1)
   - [Day 5](#day-5-1)
+- [Week 3](#week-3)
+  - [Day 1](#day-1-2)
+  - [Day 2](#day-2-2)
+  - [Day 3](#day-3-2)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
@@ -65,6 +69,20 @@
 ## Day 5
 [VPC's](aws-vpc's/README.md)
 
+# Week 3
+
+## Day 1
+
+[Deployment Group Project](deployment-group-project/README.md)
+
+## Day 2
+
+[S3 Notes](s3storage/README.md)
+
+## Day 3
+
+[S3 Image Change Script](Cat-pic-script/README.md)
+[S3 Image Reverse Script](Cat-pic-reverse/README.md)
 
 
 # Credentials for a good interview
