@@ -4,9 +4,9 @@ We use autoscaling groups so we can handle varying CPU loads by scaling up and d
 
 ## Scaling
 
-Verical: Creates another VM that is larger and transfers the workload to it, then deletes the smaller one.
-    - up or down
-Horizontal: Creates multiple VM's as needed
+Verical: Creates another VM that is larger and transfers the workload to it, then deletes the smaller one.<br>
+    - up or down<br>
+Horizontal: Creates multiple VM's as needed<br>
     - out or in
 
 ## Overview
@@ -25,7 +25,7 @@ Check at every step!
 
 Auto scaling groups create the VM's
 
-The VM's are all in different subnets so they all are in different availibility zones, and so if one data centre crashes there are still others working. 
+The VM's are all in different subnets so they all are in different availibility zones, and so if one data centre crashes there are still others working.<br>
 Spreads the vm's out between the subnets availabile. Therefore it creates both High availibility (HA) and scalibility (SC).
 
 Load Balancer: decides which VM should get the requests based on which are healthy and how much load they have.
@@ -55,9 +55,16 @@ Load Balancer: decides which VM should get the requests based on which are healt
    1. name
    2. launch template
    3. next
+   
+![](../ReadMeImages/asg-naming.png)
+
    4. network: 
       1. default VPC, 
       2. availibilty zones :DevOpsStudent default 1a-ic
+
+
+![](../ReadMeImages/availibility-zones.png)
+
    5. Load balancing
       1. new load balancer
       2. application load balancer
@@ -66,30 +73,39 @@ Load Balancer: decides which VM should get the requests based on which are healt
       5. HTTP Port 80
       6. create a new target group
       7. name
+   
+![](../ReadMeImages/load-balancer.png)
+
+
    6. Turn on Elastic Load Balancing health checks (checks if instances are healthy or not so they can be replaced)
    7. health check period (waits for it to initialise)
    8. next
    9.  Desired, min and max
-   10. Target tracking scaling policy
-   11. Metric: average CPU
-   12. Target: 50
-   13. Maintenance Policy: Prioritize availibility
-   14. Tag: Name (for created instances)
-   15. Complete
-   16. You can now load the web from the load balancer DNS name
+
+![](../ReadMeImages/minmax.png)
+
+   1.  Target tracking scaling policy
+   2.  Metric: average CPU
+   3.  Target: 50
+   4.  Maintenance Policy: Prioritize availibility
+   5.  Tag: Name (for created instances)
+   6.  Complete
+   7.  You can now load the web from the load balancer DNS name
+
+
 
 ## Terminating
 
 If you terminate one of the instances it will quickly spin another one up to replace it, but if you refresh the app it will be weird for a bit (100% availibility is not realistic as somethung will always go wrong somewhere)
 
 To remove the instances for good you have to remove...
-1. lb
-2. tg
-3. asg
+1. load balancer
+2. target group
+3. Auto Scaling Group
 
 TMAY and then cover a technical area on course by was of a presentation
 
-e.g. HA and SC with auto scaling groups
-    - enough to talk about
-    - to explain what YOU have done, how, and the benefits I saw from doing it that way and how they would apply in a bussiness context
+e.g. HA and SC with auto scaling groups<br>
+    - enough to talk about<br>
+    - to explain what YOU have done, how, and the benefits I saw from doing it that way and how they would apply in a bussiness context<br>
     - Keep it simple, diagrams as many people watching aren't technical
