@@ -1,10 +1,22 @@
 # Azure 2-tier deployment
 
+## SSH Key
+
+SSH keys are independent to the virtual networks, they are credentials to log into your virtual machine but could be used across any number of VM's or virtual networks.
+AWS and azure can generate them for us and give us the .pem file, or we can create one ourself on our local machine.
+
 ## Virtual Network
+
+Unlike AWS there is not a default virtual betwork, so you must create one yourself first.
+Differences!: 
+Private subnet? To make a private subnet private (like aws) you need to make sure it does not have a public IP.
+
 
 First, we created our Azure Virtual Network within the UK South region with the address space of 10.0.0.0/16.
 As the NodeJS app has both an app and database we created two subnets, one for each vm.
 The app vm has an address space of 10.0.2.0/16. and the database vm has an address space of 10.0.3.0/16.
+
+Azure security groups can be assigned to be vm or a subnet. (different to AWS, just VM's, called an access control list for subnets)
 
 ## Database Virtual Machine (Manual) 
 

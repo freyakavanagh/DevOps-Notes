@@ -11,6 +11,9 @@ They are globally available (don't have to choose region) and built in redundenc
 You need aws cli credentials to log into your awscli account in the terminal. Never let them out into public, even on a teams call.
 You can keep them in your .SSH folder and can also store them as environment variables.
 
+Redundency: data can always be restored(if one server goes down) because you have multiple copies in multiple locations/servers.
+S3 provides it by default: Availability Across different Multiple Availability Zones within their region that all have separate infrastructure.
+
 ### In the terminal...
 
 sudo apt install awscli -y : intalls awscli

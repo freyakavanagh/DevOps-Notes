@@ -16,6 +16,7 @@
   - [Day 1](#day-1-2)
   - [Day 2](#day-2-2)
   - [Day 3](#day-3-2)
+- [Aim of devops](#aim-of-devops)
 - [Credentials for a good interview](#credentials-for-a-good-interview)
 - [Why .SSH Folder](#why-ssh-folder)
 - [Removing a .git file](#removing-a-git-file)
@@ -83,6 +84,10 @@
 
 [S3 Image Change Script](Cat-pic-script/README.md)<br>
 [S3 Image Reverse Script](Cat-pic-reverse/README.md)
+
+# Aim of devops
+
+High availibility for the end user
 
 
 # Credentials for a good interview

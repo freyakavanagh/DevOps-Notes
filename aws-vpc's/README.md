@@ -25,7 +25,7 @@ Version 4 IP Address
 
 CDIR Block (10.0.0.0/16)
 - The VPC and subnets all have one
-- Made up of a version 4 IP address and a number that denotes whihc bits are fixed
+- Made up of a version 4 IP address and a number that denotes which bits are fixed
   - i.e if 16, the first two numbers of the IP are fixed
   - The subnets within the VPC can then share a part of the IP (the first two numbers)
     - if 10.0.2.0/24 was then assigned to a subnet, devices within the subnet will share the first three numbers of the IP

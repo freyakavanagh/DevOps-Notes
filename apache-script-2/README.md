@@ -80,3 +80,11 @@ echo "running..."
 mvn spring-boot:start
 echo "done"
 echo ""
+
+
+
+## User Data for AMI Instance
+
+#!/bin/bash
+   -  cd repo
+   -  sudo mvn spring-boot:start
