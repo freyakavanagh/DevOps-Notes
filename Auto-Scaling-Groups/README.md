@@ -11,16 +11,20 @@ Horizontal: Creates multiple VM's as needed<br>
 
 ## Overview
 
+![](../ReadMeImages/AWSAutoscalingdiagram.jpeg)
+
+
+
 Check at every step! 
 1. VM
 2. AMI
-   1. a snapshot of the disc
+   - a snapshot of the disc
 3. Launch Template
-   1. AMI + user data + security group + key pair
-   2. everything needed to launch when autoscaling
+   - AMI + user data + security group + key pair
+   - everything needed to launch when autoscaling
 4. Auto Scaling Group
-   1. Also needs a scaling policy(needs to know how to scale)
-   2. e.g. average CPU % utilisation (across the machines), threshold it needs to hit, and the min, max VM's
+   - Also needs a scaling policy(needs to know how to scale)
+   - e.g. average CPU % utilisation (across the machines), threshold it needs to hit, and the min, max VM's
 
 
 Auto scaling groups create the VM's
